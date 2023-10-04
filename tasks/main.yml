@@ -1,0 +1,7 @@
+---
+- include_tasks: install/vector.yml
+  tags: [install]
+- name: Flush handlers to restart vector
+  ansible.builtin.meta: flush_handlers
+- include_tasks: configure/vector.yml
+  tags: [config]
