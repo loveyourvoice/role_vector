@@ -18,7 +18,7 @@ Vector
 
     - hosts: servers
       roles:
-         - { role: vector }
+         - role: loveyourvoice.role_vector
 
 Лицензия
 -------
